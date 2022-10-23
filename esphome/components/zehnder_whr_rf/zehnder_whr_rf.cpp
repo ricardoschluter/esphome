@@ -3,14 +3,14 @@
 
 namespace esphome {
 namespace zehnder_whr_rf {
-class ZehnderWhrRF : public PollingComponent, public Sensor {
+class ZehnderWhrRF : public PollingComponent {
  public:
   void setup() override {
-    // This will be called by App.setup()
+   ESP_LOGD("setup exectuted in cpp");
   }
-  void update() override {
-    // This will be called by App.loop()
-  }
+  void update() override { 
+    ESP_LOGD("updating in cpp");
+  } // This will be called by App.setup()
 };
 }  // namespace zehnder_whr_rf
 }  // namespace esphome
