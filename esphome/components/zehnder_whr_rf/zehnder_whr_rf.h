@@ -7,9 +7,9 @@
 
 namespace esphome {
 namespace zehnder_whr_rf {
-class ZehnderWhrRF : public PollingComponent {
+class ZehnderWhrRfSensor : public PollingComponent {
  public:
-  ZehnderWhrRF() : PollingComponent(10000) {}
+  ZehnderWhrRfSensor() : PollingComponent(10000) {}
 
   void setup() override {
     ESP_LOGD("setup exectuted");
