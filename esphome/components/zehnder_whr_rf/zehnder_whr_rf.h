@@ -1,5 +1,6 @@
 #pragma once
 
+#include "esphome.h"
 #include "component.h"
 #include "sensor.h"
 #include "spi.h"
